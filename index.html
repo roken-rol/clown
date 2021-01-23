@@ -1,0 +1,30 @@
+<body bgcolor="black">
+<style>
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: comic sans;
+  padding: 2px;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20pt;
+}
+</style>
+</body>
+<br><br><br><br><br><br><br><br>
+<a onclick="myAudioFunction('a');">
+    <center>
+     <img src="data/clown.jpg">
+     <figcaption>
+      click
+     </figcaption>
+    </center>
+</a>
+<script>
+    var aAudio = new Audio('data/horn.mp3');
+    function myAudioFunction(letter) {
+        if(letter == 'a') {
+            aAudio.play()
+        }
+    }
+</script>
